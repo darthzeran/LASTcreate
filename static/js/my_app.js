@@ -30,6 +30,7 @@ angular.module('myApp', [])
       $scope.url='';
        $scope.user.urls += newUrl;
        console.log($scope.user._id);
+       console.log($scope.user.urls.length);
        $http.post('/user/update', $scope.user)
           .success(function(data) {
             console.log('success');
