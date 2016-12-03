@@ -11,13 +11,18 @@ angular.module('myApp', []).
       $scope.error = data;
     });
 
-    $scope.addProj() {
+    $scope.addProj = function() {
+       console.log("in project");
        var newUrl = {
          "name" : $scope.name,
          "title" : $scope.title,
          "photo" : $scope.foto
-       }
-       
-    }
+       };
+       $scope.user.urls += newUrl;
+       console.log($scope.user._id);
+       $http.put('/user/' + $scope.user._id + 'updateUrl', newUrl).success(function(data){
+          console.log('success');
+       }); 
+    };
 
   }]);
