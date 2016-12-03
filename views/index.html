@@ -22,9 +22,10 @@
     <button type="submit">Submit</button>
   </form>
   
-  <div class="out" ng-repeat="items in user.urls track by $index">
-    <img src="{{items.foto}}" height="10%"> <b>{{items.name}} hi <a href="{{items.url}}">{{items.title}}</a>
-	<!--span id="sign" class="glyphicon glyphicon-remove" ng-click="delete(items)"></span>-->
+  <div class="out" ng-repeat="items in user.urls">
+     {{items}}
+   <!-- <img src="{{items.foto}}" height="10%"> <b>{{items.name}} hi <a href="{{items.url}}">{{items.title}}</a>
+	<span id="sign" class="glyphicon glyphicon-remove" ng-click="delete(items)"></span>-->
 	
     
   </div>
