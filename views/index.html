@@ -12,7 +12,6 @@
     <h2>Welcome  <%= username %></h2>
     <a href="/logout">logout</a>
 	
-  </div>
   <br>
   <hr><form ng-submit="addProj()" style = "margin-top30px;">
 
@@ -24,8 +23,8 @@
   </form>
   
   <div class="out" ng-repeat="items in user.urls">
-    <img src="{{items.foto}}" height="10%"> <b>{{items.name}} <a href="{{items.url}}">{{items.title}}</a>   </b>
-	<span id="sign" class="glyphicon glyphicon-remove" ng-click="delete(items)"></span>
+   <!-- <img src="{{items.foto}}" height="10%"> <b>{{items.name}} <a href="{{items.url}}">{{items.title}}</a>   </b>
+	<span id="sign" class="glyphicon glyphicon-remove" ng-click="delete(items)"></span> -->
 	
     
   </div>
@@ -33,7 +32,6 @@
   
   
   
-  <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
-  <script src="/static/js/my_app.js"></script>
+  </div>
 </body>
 </html>
