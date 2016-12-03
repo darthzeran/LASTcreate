@@ -4,6 +4,7 @@
   <title>WebMaker Secret Base</title>
  <link rel="stylesheet" type="text/css" 
       href="/static/css/styles.css" />
+ <script src="/static/js/my_app.js"></script>
 </head>
 <body>
   <div ng-controller="myController">
@@ -21,9 +22,9 @@
     <button type="submit">Submit</button>
   </form>
   
-  <div class="out" ng-repeat="items in array">
-    <img src=" {{user.foto}}" height="10%"> <b>{{user.name}} <a href="{{user.url}}">{{user.title}}</a>   </b>
-	<span id="sign" class="glyphicon glyphicon-remove" ng-click="delete(car)"></span>
+  <div class="out" ng-repeat="items in user.urls">
+    <img src="{{items.foto}}" height="10%"> <b>{{items.name}} <a href="{{items.url}}">{{items.title}}</a>   </b>
+	<span id="sign" class="glyphicon glyphicon-remove" ng-click="delete(items)"></span>
 	
     
   </div>
