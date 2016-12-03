@@ -16,13 +16,14 @@ angular.module('myApp', [])
        var newUrl = {
          "name" : $scope.name,
          "title" : $scope.title,
-         "photo" : $scope.foto
+         "photo" : $scope.foto,
+         "url" : $scope.url
        };
        $scope.user.urls += newUrl;
        console.log($scope.user._id);
-       $http.put('/user/' + $scope.user._id + 'updateUrl', newUrl).success(function(data){
-          console.log('success');
-       }); 
+      // $http.put('/user/' + $scope.user._id + 'updateUrl', newUrl).success(function(data){
+        //  console.log('success');
+      // }); 
        
     };
 
