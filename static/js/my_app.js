@@ -29,6 +29,12 @@ angular.module('myApp', [])
       $scope.foto='';
       $scope.url='';
        $scope.user.urls += newUrl;
+       console.log($scope.user._id);
+       $http.post('/user/update', $scope.user)
+          .success(function(data) {
+            console.log('success');
+         });
+
        console.log(newUrl);
       // $http.put('/user/' + $scope.user._id + 'updateUrl', newUrl).success(function(data){
         //  console.log('success');
