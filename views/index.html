@@ -15,14 +15,14 @@
   <hr><form ng-submit="addProj()" style = "margin-top30px;">
 
 	<input type="text" ng-model="name"placeholder="Project Name"></input> 
-
+<input type="text" ng-model="url"placeholder="Project URL"></input> 
 	<input type="text" ng-model="title"placeholder="Project Title"></input> 
 <input type="text" ng-model="foto"placeholder="Project Image"></input> 	
     <button type="submit">Submit</button>
   </form>
   
-  <div class="out" ng-repeat="car in cars">
-    <img src=" {{car.foto}}" height="10%"> <b>{{car.make}} {{car.model}} {{car.year}} {{car.miles}} - upvotes: {{car.upvotes}}  </b>
+  <div class="out" ng-repeat="items in array">
+    <img src=" {{user.foto}}" height="10%"> <b>{{user.name}} <a href="{{user.url}}">{{user.title}}</a>   </b>
 	<span id="sign" class="glyphicon glyphicon-remove" ng-click="delete(car)"></span>
 	
     
