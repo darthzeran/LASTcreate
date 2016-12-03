@@ -10,12 +10,17 @@
     <h2>Welcome. You are Logged In as: <%= username %></h2>
     <a href="/logout">logout</a>
     <a href="/user">Edit User</a>
-    <p>Website: <a href="http://ec2-54-244-167-140.us-west-2.compute.amazonaws.com:3000/">http://ec2-54-244-167-140.us-west-2.compute.amazonaws.com:3000/</a><p><br>
-	<a href="http://searchsecurity.techtarget.com/definition/authentication">Authentication Definition</a><br>
-	<a href="https://en.wikipedia.org/wiki/Authentication">Authentification History </a>
+	
   </div>
-  <hr><%= msg %>
-  <hr>Color <%= color %>
+  <br>
+  <hr><form ng-submit="addCar()" style = "margin-top30px;">
+    <input type="text" ng-model="make"placeholder="Car Make"></input>
+	<input type="text" ng-model="model"placeholder="Car Model"></input> 
+	<input type="text" ng-model="year"placeholder="Car Year"></input> 
+	<input type="text" ng-model="miles"placeholder="Car Miles"></input> 
+<input type="text" ng-model="foto"placeholder="Car Image"></input> 	
+    <button type="submit">Submit Car</button>
+  </form>
   <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
   <script src="/static/js/my_app.js"></script>
 </body>
