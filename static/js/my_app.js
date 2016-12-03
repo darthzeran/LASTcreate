@@ -21,13 +21,6 @@ angular.module('myApp', [])
          "foto" : $scope.foto,
          "url" : $scope.url
        };
-	   if($scope.foto==''){
-		  newUrl.foto="http://www.thenug.com/sites/default/pub/060213/6917873873_d2d32ed83f_z.jpg";
-	  }
-	  $scope.name='';
-      $scope.title='';
-      $scope.foto='';
-      $scope.url='';
        $scope.user.urls += newUrl;
        console.log($scope.user._id);
        console.log($scope.user.urls.length);
