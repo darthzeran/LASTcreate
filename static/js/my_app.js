@@ -11,13 +11,13 @@ angular.module('myApp', []).
       $scope.error = data;
     });
 
-    $scope.addProj() {
+    $scope.addProj=function() {
        var newUrl = {
          "name" : $scope.name,
          "title" : $scope.title,
          "photo" : $scope.foto
-       }
+       };
        
-    }
+    };
 
   }]);
