@@ -2,7 +2,7 @@
 <html ng-app="myApp">
 <head>
   <title>WebMaker Secret Base</title>
-  <link rel="stylesheet" type="text/css" 
+ <link rel="stylesheet" type="text/css" 
       href="/static/css/styles.css" />
 </head>
 <body>
@@ -13,13 +13,13 @@
 	
   </div>
   <br>
-  <hr><form ng-submit="addCar()" style = "margin-top30px;">
-    <input type="text" ng-model="make"placeholder="Car Make"></input>
-	<input type="text" ng-model="model"placeholder="Car Model"></input> 
-	<input type="text" ng-model="year"placeholder="Car Year"></input> 
-	<input type="text" ng-model="miles"placeholder="Car Miles"></input> 
-<input type="text" ng-model="foto"placeholder="Car Image"></input> 	
-    <button type="submit">Submit Car</button>
+  <hr><form ng-submit="addProj()" style = "margin-top30px;">
+
+	<input type="text" ng-model="name"placeholder="Project Name"></input> 
+
+	<input type="text" ng-model="title"placeholder="Project Title"></input> 
+<input type="text" ng-model="foto"placeholder="Project Image"></input> 	
+    <button type="submit">Submit</button>
   </form>
   <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
   <script src="/static/js/my_app.js"></script>
