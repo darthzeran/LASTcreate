@@ -10,4 +10,14 @@ angular.module('myApp', []).
       $scope.user = {};
       $scope.error = data;
     });
+
+    $scope.addProj() {
+       var newUrl = {
+         "name" : $scope.name,
+         "title" : $scope.title,
+         "photo" : $scope.foto
+       }
+       
+    }
+
   }]);
