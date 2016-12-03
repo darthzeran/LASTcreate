@@ -20,6 +20,17 @@
 <input type="text" ng-model="foto"placeholder="Project Image"></input> 	
     <button type="submit">Submit</button>
   </form>
+  
+  <div class="out" ng-repeat="car in cars">
+    <img src=" {{car.foto}}" height="10%"> <b>{{car.make}} {{car.model}} {{car.year}} {{car.miles}} - upvotes: {{car.upvotes}}  </b>
+	<span id="sign" class="glyphicon glyphicon-remove" ng-click="delete(car)"></span>
+	
+    
+  </div>
+  
+  
+  
+  
   <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
   <script src="/static/js/my_app.js"></script>
 </body>
