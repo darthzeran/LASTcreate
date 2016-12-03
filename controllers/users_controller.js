@@ -65,6 +65,7 @@ exports.getUserProfile = function(req, res) {
   });
 };
 exports.updateUser = function(req, res){
+  console.log("here");
   User.findOne({ _id: req.session.user })
   .exec(function(err, user) {
     console.log("updateUser req.bod.urls = " + req.body.urls);
@@ -81,6 +82,8 @@ exports.updateUser = function(req, res){
     });
   });
 };
+
+
 exports.deleteUser = function(req, res){
   User.findOne({ _id: req.session.user })
   .exec(function(err, user) {

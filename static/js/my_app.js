@@ -23,6 +23,11 @@ angular.module('myApp', [])
        };
        $scope.user.urls += newUrl;
        console.log($scope.user._id);
+       $http.post('/user/update', $scope.user)
+          .success(function(data) {
+            console.log('success');
+         });
+
       // $http.put('/user/' + $scope.user._id + 'updateUrl', newUrl).success(function(data){
         //  console.log('success');
       // }); 
